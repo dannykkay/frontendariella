@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Damilola Oyedeji (Ariella) - Poet, Essayist, and Literary Critic. PhD candidate at Texas.">
+    <title>Damilola Oyedeji (Ariella) - Poet & Literary Critic</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- AOS - Animate On Scroll Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Page loader -->
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-content">
+            <div class="loader-text">Damilola Oyedeji</div>
+            <div class="loader-bar"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="mainNav">
+        <div class="container">
+            <a href="#home" class="nav-brand">Damilola Oyedeji</a>
+            <button class="nav-toggle" aria-label="Toggle navigation" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <!-- Animated gradient background -->
+        <div class="hero-gradient-bg"></div>
+        
+        <!-- Floating particles -->
+        <div class="particles" id="particles"></div>
+        
+        <div class="hero-background"></div>
+        <div class="container">
+            <div class="hero-content fade-in">
+                <div class="hero-image-wrapper">
+                    <div class="hero-image">
+                        <img src="damilola.jpeg" alt="Damilola Oyedeji">
+                    </div>
+                </div>
+                <h1 class="hero-title">Damilola Oyedeji</h1>
+                <p class="hero-pen-name">(Ariella)</p>
+                <p class="hero-subtitle">Poet || Essayist || Literary Critic || PhD Candidate at Texas</p>
+                <div class="hero-cta">
+                    <a href="#works" class="btn btn-primary">Read My Work</a>
+                    <a href="#publications" class="btn btn-secondary">Publications</a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-content" data-aos="fade-up">
+                <div class="section-header">
+                    <span class="section-label">Get To Know Me</span>
+                    <h2 class="section-title">About Ariella</h2>
+                </div>
+                <div class="about-grid">
+                    <div class="about-image" data-aos="fade-right">
+                        <img src="damilola.jpeg" alt="Damilola Oyedeji writing">
+                        <div class="about-image-overlay"></div>
+                    </div>
+                    <div class="about-content" data-aos="fade-left">
+                        <div class="about-text">
+                            <p class="lead">Damilola Oyedeji, who writes under the pen name Ariella, is a poet, essayist, and literary critic exploring the intersections of language, identity, trauma, and resistance.</p>
+                            <p>Her work has appeared in prestigious literary journals including <em>LLIDS</em>, <em>Lolwe</em>, <em>Orange Blossom Review</em>, <em>Brittle Paper</em>, <em>The Belfast Review</em>, <em>The Talon Review</em>, and <em>Prairie Home Magazine</em>, among others. Through poetry and critical essays, she examines atypical bodies, feminist narratives, and the politics of language.</p>
+                            <p>Damilola is currently pursuing her PhD at Texas, where she continues to push the boundaries of literary criticism and creative expression. Her scholarly work interrogates trauma narratives through feminist lenses, while her creative writing gives voice to the silenced and overlooked.</p>
+                        </div>
+                        <div class="about-note">
+                            <div class="quote-mark">"</div>
+                            <h3>Writing Philosophy</h3>
+                            <p>I write to speak what cannot be spoken, to name what has been silenced. My work exists in the spaces between poetry and criticism, where language becomes both weapon and sanctuary.</p>
+                            <p>Whether through lyric poetry or literary analysis, I seek to illuminate the power dynamics embedded in how we use—and are used by—language.</p>
+                        </div>
+                        
+                        <!-- Stats Counter -->
+                        <div class="about-stats" data-aos="fade-up" data-aos-delay="200">
+                            <div class="stat-item">
+                                <div class="stat-number">15+</div>
+                                <div class="stat-label">Publications</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">10+</div>
+                                <div class="stat-label">Literary Journals</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">PhD</div>
+                                <div class="stat-label">Candidate</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Works Section -->
+    <section class="works" id="works">
+        <div class="container">
+            <div class="section-content" data-aos="fade-up">
+                <div class="section-header">
+                    <span class="section-label">What I Create</span>
+                    <h2 class="section-title">Featured Work</h2>
+                </div>
+                
+                <!-- Work Filters -->
+                <div class="work-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="poetry">Poetry</button>
+                    <button class="filter-btn" data-filter="essays">Essays</button>
+                    <button class="filter-btn" data-filter="criticism">Criticism</button>
+                </div>
+
+                <!-- Works Grid -->
+                <div class="works-grid">
+                    <!-- Academic/Criticism -->
+                    <article class="work-item featured" data-category="criticism" data-aos="fade-up">
+                        <div class="work-category">Criticism</div>
+                        <h3 class="work-title">To Speak, Not to Speak, or How to Speak: Atypical Bodies and the Politics of Language</h3>
+                        <p class="work-excerpt">An exploration of how language constructs and constrains bodies that exist outside normative frameworks...</p>
+                        <p class="work-publication">Published in <em>LLIDS</em></p>
+                        <div class="work-hover-effect"></div>
+                    </article>
+
+                    <article class="work-item" data-category="criticism" data-aos="fade-up" data-aos-delay="100">
+                        <div class="work-category">Essay</div>
+                        <h3 class="work-title">Reading The Son of the House as a Trauma Narrative Through a Feminist Lens</h3>
+                        <p class="work-excerpt">A critical feminist analysis examining trauma, power, and survival in contemporary literature...</p>
+                        <p class="work-publication">Published in <em>The Shallow Tales Review</em></p>
+                        <div class="work-hover-effect"></div>
+                    </article>
+
+                    <!-- Poetry -->
+                    <article class="work-item" data-category="poetry" data-aos="fade-up" data-aos-delay="200">
+                        <div class="work-category">Poetry</div>
+                        <h3 class="work-title">Panicky Little Things</h3>
+                        <p class="work-excerpt">A collection exploring anxiety, fear, and the small terrors that accumulate in the body...</p>
+                        <p class="work-publication">Published in <em>Lolwe</em></p>
+                        <div class="work-hover-effect"></div>
+                    </article>
+
+                    <article class="work-item" data-category="poetry" data-aos="fade-up" data-aos-delay="200">
+                        <div class="work-category">Poetry</div>
+                        <h3 class="work-title">Replica</h3>
+                        <p class="work-excerpt">Poems that interrogate authenticity, imitation, and the copies we make of ourselves...</p>
+                        <p class="work-publication">Published in <em>Orange Blossom Review</em></p>
+                        <div class="work-hover-effect"></div>
+                    </article>
+
+                    <article class="work-item" data-category="poetry" data-aos="fade-up" data-aos-delay="200">
+                        <div class="work-category">Poetry</div>
+                        <h3 class="work-title">I Call Upon Your Name</h3>
+                        <p class="work-excerpt">An invocation exploring naming, calling, and the power of utterance in relationship and loss...</p>
+                        <p class="work-publication">Published in <em>The Shallow Tales Review</em></p>
+                        <div class="work-hover-effect"></div>
+                    </article>
+
+                    <article class="work-item" data-category="poetry" data-aos="fade-up" data-aos-delay="200">
+                        <div class="work-category">Poetry</div>
+                        <h3 class="work-title">Two Poems</h3>
+                        <p class="work-excerpt">A pair of poems exploring duality, contradiction, and the spaces between opposing truths...</p>
+                        <p class="work-publication">Published in <em>Alkebulan Art</em></p>
+                        <div class="work-hover-effect"></div>
+                    </article>
+
+                    <article class="work-item" data-category="poetry" data-aos="fade-up" data-aos-delay="200">
+                        <div class="work-category">Poetry</div>
+                        <h3 class="work-title">The Sky Calls It Therapy When It Rains</h3>
+                        <p class="work-excerpt">Meditations on weather as emotional landscape, where rain becomes both metaphor and medicine...</p>
+                        <p class="work-publication">Published in <em>Brittle Paper</em></p>
+                        <div class="work-hover-effect"></div>
+                    </article>
+
+                    <article class="work-item" data-category="poetry" data-aos="fade-up" data-aos-delay="200">
+                        <div class="work-category">Poetry</div>
+                        <h3 class="work-title">Self-Portrait as a Mateless Bride</h3>
+                        <p class="work-excerpt">A reimagining of the self through the lens of solitude, examining what it means to be complete...</p>
+                        <p class="work-publication">Published in <em>The Talon Review</em></p>
+                        <div class="work-hover-effect"></div>
+                    </article>
+
+                    <article class="work-item" data-category="poetry" data-aos="fade-up" data-aos-delay="200">
+                        <div class="work-category">Poetry</div>
+                        <h3 class="work-title">SYNCHRONIZED CHAOS</h3>
+                        <p class="work-excerpt">Poems that find pattern in disorder, examining how chaos itself can become a form of organization...</p>
+                        <p class="work-publication">Published in <em>Synchronized Chaos</em></p>
+                        <div class="work-hover-effect"></div>
+                    </article>
+
+                    <article class="work-item" data-category="poetry" data-aos="fade-up" data-aos-delay="200">
+                        <div class="work-category">Poetry</div>
+                        <h3 class="work-title">She</h3>
+                        <p class="work-excerpt">Poems exploring the third-person self, distance, and the ways we narrate our own lives...</p>
+                        <p class="work-publication">Published in <em>Poetry Journal</em></p>
+                        <div class="work-hover-effect"></div>
+                    </article>
+
+                    <article class="work-item" data-category="poetry" data-aos="fade-up" data-aos-delay="200">
+                        <div class="work-category">Poetry</div>
+                        <h3 class="work-title">SIC (to attack)</h3>
+                        <p class="work-excerpt">A confrontational piece examining violence, correction, and the aggressive impulses embedded in language...</p>
+                        <p class="work-publication">Published in <em>Spilwords.com</em></p>
+                        <div class="work-hover-effect"></div>
+                    </article>
+
+                    <!-- Essays -->
+                    <article class="work-item" data-category="essays" data-aos="fade-up" data-aos-delay="300">
+                        <div class="work-category">Essay</div>
+                        <h3 class="work-title">How to Bury Bodies</h3>
+                        <p class="work-excerpt">A lyric essay on grief, disposal, and the rituals we create for letting go of what we cannot keep...</p>
+                        <p class="work-publication">Published in <em>Prairie Home Magazine</em></p>
+                        <div class="work-hover-effect"></div>
+                    </article>
+
+                    <article class="work-item" data-category="essays" data-aos="fade-up" data-aos-delay="300">
+                        <div class="work-category">Essay</div>
+                        <h3 class="work-title">Why I Write</h3>
+                        <p class="work-excerpt">A personal meditation on the motivations, compulsions, and necessities that drive the writing life...</p>
+                        <p class="work-publication">Published in <em>Sprinng</em></p>
+                        <div class="work-hover-effect"></div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Poetry Section -->
+    <section class="featured-poetry">
+        <div class="poetry-background"></div>
+        <div class="container">
+            <div class="section-content" data-aos="fade-up">
+                <h2 class="section-title">Featured Work</h2>
+                <div class="poem-card">
+                    <div class="poem-card-inner">
+                        <h3 class="poem-title">SIC (to attack)</h3>
+                        <div class="poem-text">
+    <p>Spread out like the world’s lid—</p>
+    <p>sometimes engulfed in nature’s fiery circle,</p>
+    <p>sometimes adorned with immaculate sprinkles</p>
+    <p>on black pillows.</p>
+    <br>
+    <p>You were the sky.</p>
+    <br>
+    <p>I forage fondest memories of you</p>
+    <p>in this present plain;</p>
+    <p>I find that they are hidden</p>
+    <p>in realms beyond.</p>
+    <p>Stars are the puddles of your feet.</p>
+    <p>I call upon the girl</p>
+    <p>with an oversized smile</p>
+    <p>from nights so far,</p>
+    <p>&amp; you too, I call, but</p>
+    <br>
+    <p>You are a distant land</p>
+    <p>from my finger.</p>
+    <br>
+    <p>I cease not to shake the world</p>
+    <p>by its shoulders,</p>
+    <p>to command it</p>
+    <p>to summon Lazarus.</p>
+    <p>I cease not to demand</p>
+    <p>a rebirth—</p>
+    <p>“come forth!”</p>
+    <p>my heart prays</p>
+    <p>with wistfulness, but</p>
+    <br>
+    <p>Alas father!</p>
+    <p>Your pearly stones of sight</p>
+    <p>have no more cheerful glint—</p>
+    <p>they have seen dark winds</p>
+    <p>whispering in the day,</p>
+    <p>and now this is what</p>
+    <p>you have become;</p>
+    <p>a tale of riotous rage.</p>
+    <br>
+    <p>You are a bloody hand</p>
+    <p>I will not lick from.</p>
+</div>
+
+                        <p class="poem-publication"><em>Published in spillwords.com</em></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section class="publications" id="publications">
+        <div class="container">
+            <div class="section-content" data-aos="fade-up">
+                <div class="section-header">
+                    <span class="section-label">Where To Find Me</span>
+                    <h2 class="section-title">Publications & Features</h2>
+                    <p class="section-subtitle">Click to read my published works</p>
+                </div>
+                <div class="publications-grid" data-aos="fade-up">
+                    <a href="https://ellids.com/research/volumesissues/archive-social-justice/socialjustice-forum-oyedeji/" target="_blank" rel="noopener" class="publication-item">
+                        <div class="publication-icon">📖</div>
+                        <span>To Speak, Not to Speak, or How to Speak: Atypical Bodies and the Politics of Language</span>
+                    </a>
+                    <a href="https://lolwe.org/panicky-little-things/" target="_blank" rel="noopener" class="publication-item">
+                        <div class="publication-icon">✍️</div>
+                        <span>Panicky Little Things - Damilola Oyedeji</span>
+                    </a>
+                    <a href="https://orangeblossomreview.org/journal/replica/" target="_blank" rel="noopener" class="publication-item">
+                        <div class="publication-icon">🍊</div>
+                        <span>Replica — Orange Blossom Review</span>
+                    </a>
+                    <a href="https://theshallowtalesreview.com.ng/i-call-upon-your-name-damilola-oyedeji/" target="_blank" rel="noopener" class="publication-item">
+                        <div class="publication-icon">📝</div>
+                        <span>I Call Upon Your Name - The Shallow Tales Review</span>
+                    </a>
+                    <a href="https://alkebulanart.org.uk/three-poems-by-damilola-oyedeji/" target="_blank" rel="noopener" class="publication-item">
+                        <div class="publication-icon">🌍</div>
+                        <span>Two Poems by Damilola Oyedeji - Alkebulan Art</span>
+                    </a>
+                    <a href="https://brittlepaper.com/2025/01/the-sky-calls-it-therapy-when-it-rains-damilola-oyedeji-creative-non-fiction/" target="_blank" rel="noopener" class="publication-item">
+                        <div class="publication-icon">📄</div>
+                        <span>The Sky Calls It Therapy When It Rains - Brittle Paper</span>
+                    </a>
+                    <a href="https://nigeriareview.com.ng/reading-the-son-of-the-house-as-a-trauma-narrative-through-a-feminist-lens-damilola-oyedeji/" target="_blank" rel="noopener" class="publication-item">
+                        <div class="publication-icon">📚</div>
+                        <span>Reading The Son of the House as a Trauma Narrative Through a Feminist Lens</span>
+                    </a>
+                    <a href="https://www.poetryjournal.org/damilola_oyedeji/she/" target="_blank" rel="noopener" class="publication-item">
+                        <div class="publication-icon">✨</div>
+                        <span>She — Poetry Journal</span>
+                    </a>
+                    <a href="https://thebelfastreview.wixsite.com/home/issues" target="_blank" rel="noopener" class="publication-item">
+                        <div class="publication-icon">🍀</div>
+                        <span>Issue2 | THE BELFAST REVIEW</span>
+                    </a>
+                    <a href="https://talonreview.com/" target="_blank" rel="noopener" class="publication-item">
+                        <div class="publication-icon">🦅</div>
+                        <span>Self-Portrait as a Mateless Bride; The Talon Review</span>
+                    </a>
+                    <a href="https://prairiehomemag.com/march-2024-p1" target="_blank" rel="noopener" class="publication-item">
+                        <div class="publication-icon">🏡</div>
+                        <span>How to bury bodies; Prairie Home Magazine</span>
+                    </a>
+                    <a href="https://sprinng.org/anthologies" target="_blank" rel="noopener" class="publication-item">
+                        <div class="publication-icon">🌸</div>
+                        <span>Why I write; Sprinng</span>
+                    </a>
+                    <a href="https://lovethedreamgirl.wordpress.com/blog/" target="_blank" rel="noopener" class="publication-item">
+                        <div class="publication-icon">💫</div>
+                        <span>beYoutiful with Dami</span>
+                    </a>
+                    <a href="https://synchchaos.com/poetry-from-damilola-oyedeji/" target="_blank" rel="noopener" class="publication-item">
+                        <div class="publication-icon">🔀</div>
+                        <span>Poetry from Damilola Oyedeji; SYNCHRONIZED CHAOS</span>
+                    </a>
+                    <a href="https://spillwords.com/sic-to-attack/" target="_blank" rel="noopener" class="publication-item">
+                        <div class="publication-icon">✒️</div>
+                        <span>SIC (to attack); Spilwords.com</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Themes Section -->
+    <section class="themes">
+        <div class="container">
+            <div class="section-content fade-in">
+                <h2 class="section-title">Themes & Interests</h2>
+                <div class="themes-grid">
+                    <div class="theme-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="theme-icon">💬</div>
+                        <h3>Language & Politics</h3>
+                        <p>Examining how language shapes, constrains, and liberates atypical bodies and marginalized voices.</p>
+                    </div>
+                    <div class="theme-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="theme-icon">🌪️</div>
+                        <h3>Trauma & Resilience</h3>
+                        <p>Interrogating trauma narratives through feminist lenses, exploring how we survive and tell our stories.</p>
+                    </div>
+                    <div class="theme-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="theme-icon">👁️</div>
+                        <h3>The Body</h3>
+                        <p>Investigating bodies that refuse categorization, the politics of embodiment, and corporeal resistance.</p>
+                    </div>
+                    <div class="theme-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="theme-icon">🎭</div>
+                        <h3>Identity & Performance</h3>
+                        <p>Exploring self-construction, the masks we wear, and the performances required for survival.</p>
+                    </div>
+                    <div class="theme-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="theme-icon">📖</div>
+                        <h3>Literary Criticism</h3>
+                        <p>Applying feminist, postcolonial, and critical race theories to contemporary literature.</p>
+                    </div>
+                    <div class="theme-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="theme-icon">✨</div>
+                        <h3>Silence & Speech</h3>
+                        <p>Examining what cannot be said, what refuses to be spoken, and the power dynamics of silence.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-content" data-aos="fade-up">
+                <div class="section-header">
+                    <span class="section-label">Let's Collaborate</span>
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-subtitle">I welcome inquiries from editors, publishers, and literary organizations</p>
+                </div>
+                <div class="contact-grid">
+                    <div class="contact-info" data-aos="fade-right">
+                        <p class="lead">For publication submissions, speaking engagements, or collaborative projects, please reach out.</p>
+                        <div class="contact-details">
+                            <div class="contact-detail-item">
+                                <div class="contact-icon">📧</div>
+                                <div>
+                                    <strong>Email</strong>
+                                    <p><a href="/cdn-cgi/l/email-protection#fe93919097908b91929fc8cebe99939f9792d09d9193"><span class="__cf_email__" data-cfemail="3b56545552554e54575a0d0b7b5c565a525715585456">[email&#160;protected]</span></a></p>
+                                </div>
+                            </div>
+                            <div class="contact-detail-item">
+                                <div class="contact-icon">📍</div>
+                                <div>
+                                    <strong>Based in</strong>
+                                    <p>Texas, USA</p>
+                                </div>
+                            </div>
+                            <div class="contact-detail-item">
+                                <div class="contact-icon">💼</div>
+                                <div>
+                                    <strong>Available for</strong>
+                                    <p>Readings, workshops, literary criticism, collaborative projects</p>
+                                </div>
+                            </div>
+                            <div class="contact-detail-item">
+                                <div class="contact-icon">🔗</div>
+                                <div>
+                                    <strong>Linktree</strong>
+                                    <p><a href="https://linktr.ee/damilola_oyedeji17" target="_blank" rel="noopener">linktr.ee/damilola_oyedeji17</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="contact-form" id="contactForm" data-aos="fade-left">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="organization">Organization (optional)</label>
+                            <input type="text" id="organization" name="organization">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Damilola Oyedeji (Ariella)</h3>
+                    <p>Poet, Essayist & Literary Critic</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Navigate</h4>
+                        <nav>
+                            <a href="#home">Home</a>
+                            <a href="#about">About</a>
+                            <a href="#works">Works</a>
+                            <a href="#contact">Contact</a>
+                        </nav>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Connect</h4>
+                        <div class="footer-social">
+                            <a href="https://linktr.ee/damilola_oyedeji17" target="_blank" rel="noopener">Linktree</a>
+                            <a href="https://x.com/OyedejiDamilol5" target="_blank" rel="noopener">Twitter</a>
+                            <a href="https://www.instagram.com/_dami_ariella/" target="_blank" rel="noopener">Instagram</a>
+                             <a href="https://www.linkedin.com/in/damilola-oyedeji-a7024b19a?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener">LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Damilola Oyedeji. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor">
+            <path d="M10 15V5M10 5L5 10M10 5L15 10" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+    </button>
+
+    
+         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
