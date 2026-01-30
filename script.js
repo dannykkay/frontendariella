@@ -215,7 +215,7 @@ const API_CONFIG = {
     // For local development
     development: 'http://localhost:5000',
     // For production - UPDATE THIS with your Render.com URL
-    production: 'https://your-backend.onrender.com',
+    production: 'https://ariellabackend.onrender.com',
 };
 
 // Automatically detect environment
